@@ -11,7 +11,7 @@ class Moveable:
     def move(self) -> None:
         pass
 
-class Vehicle:
+class Vehicle(Moveable):
     total_vehicles = 0
 
     def __init__(self, speed: float) -> None:
@@ -63,3 +63,4 @@ move_any_vehicle(boat1)
 move_any_vehicle(bike1)
 
 Vehicle.display_total_vehicles()
+print(Car.__mro__)
